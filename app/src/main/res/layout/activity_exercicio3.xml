@@ -18,4 +18,128 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/nome"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/uf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UF"
+        app:layout_constraintTop_toBottomOf="@id/idade"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/cidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"
+        app:layout_constraintTop_toBottomOf="@id/uf"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefone"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/cidade"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/telefone"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/tamanhoGrupo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/email">
+
+        <RadioButton
+            android:id="@+id/tamanhoP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P" />
+
+        <RadioButton
+            android:id="@+id/tamanhoM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/tamanhoG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G" />
+
+        <RadioButton
+            android:id="@+id/tamanhoGG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GG" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textoCores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cores Preferidas:"
+        app:layout_constraintTop_toBottomOf="@id/tamanhoGrupo"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/corVermelho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vermelho"
+        app:layout_constraintTop_toBottomOf="@id/textoCores"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/corAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        app:layout_constraintTop_toBottomOf="@id/corVermelho"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/corPreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preto"
+        app:layout_constraintTop_toBottomOf="@id/corAzul"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botaoCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        app:layout_constraintTop_toBottomOf="@id/corPreto"
+        android:layout_marginTop="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
